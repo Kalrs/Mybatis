@@ -6,4 +6,4 @@
 - SqlSession(会话):一个既可以发送Sql执行结果，也可以获取Mapper的接口。在现有的技术中,一般我们会让其在业务逻辑代码中“消失”，而使用的是Mybatis提供的Sql接口编程技术，提高代码的可读性和可维护性。
 - SQL Mapper(映射器):MyBatis新设计存在的组件，由一个Java接口和XML文件(或注解)构成,需要给出对应的SQL和映射规则。负责发送SQL去执行,并返回结果。
 ## 组件介绍
-- [SqlSessionFactory(工厂接口)](Corecomponents/SqlSessionFactory.md)
+- [SqlSessionFactory(工厂接口)](Core20%components/SqlSessionFactory.md)
