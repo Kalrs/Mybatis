@@ -8,4 +8,4 @@
 ## 组件介绍
 - [SqlSessionFactory(工厂接口)](Core%20components/SqlSessionFactory.md)
 - [SqlSession(会话)](Core%20components/SqlSession.md)
-- [Sql Mapper(映射器)](Core%20components/SqlMapper.md)
+- [Sql Mapper(映射器)](Core%20components/Mapper.md)
