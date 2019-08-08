@@ -29,5 +29,14 @@ public interface UserMapper {
 #### 元素描述
 - mapper:namespace所对应的是一个接口的全限定名,Mybatis上下文可以通过它找到对应的接口
 - select:属性id标识这条SQL,属性parameterType="long"说明传递给SQL的是一个long型的参数，而resultType表示返回的是一个role类型的返回值，及前面mybits-config.xml配置的别名。
-- 这条SQL中的#{id}表示传递进去的参数
+- 这条SQL中的#{id}表示传递进去的参数  
 **这里采用的是一种被称为自动映射的功能，MyBatis在默认情况下提供自动映射，只要SQL返回的列名能和POJO对应起来即可**
+### 注解实现映射器
+- 只需要一个接口就可以通过给MyBatis的注解来注入Sql.
+```java
+   public interface Mapper{
+    @Select(select id,role_name as roleName,Note from t_role where id=#{id}")
+        public Role getRole(long id);
+   }
+```
+**XML和注解两种方式同时定义，XML和覆盖掉注解，官方推荐用XML方式**
