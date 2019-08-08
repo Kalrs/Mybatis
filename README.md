@@ -7,3 +7,5 @@
 - SQL Mapper(映射器):MyBatis新设计存在的组件，由一个Java接口和XML文件(或注解)构成,需要给出对应的SQL和映射规则。负责发送SQL去执行,并返回结果。
 ## 组件介绍
 - [SqlSessionFactory(工厂接口)](Core%20components/SqlSessionFactory.md)
+- [SqlSession(会话)](Core%20components/SqlSession.md)
+- [Sql Mapper(映射器)](Core%20components/SqlMapper.md)
