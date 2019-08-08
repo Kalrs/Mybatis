@@ -12,3 +12,5 @@
 - environment:描述的是数据库,它里面的transactionManager元素是配置事务管理器,图片中采用的是MyBatis的JDBC管理方式。然后采用dataSource元素配置数据库,其中属性type="POOLED"代表采用Mybatis内部提供的连接池方式,最后定义一些关于JDBC的属性信息
 - mapper元素代表引入的那些映射器。
 ### 使用Java代码创建SqlSessionFactory
+![image](SqlSesFac.png)
+
