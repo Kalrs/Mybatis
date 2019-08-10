@@ -35,4 +35,6 @@
 - Mapper:代表一个业务处理步骤,随着SqlSession的关闭而废弃。
 ## 实例
 - 一个简单的插入删除修改等的[demo](Core%20components/Demo.md)
+## MyBatis配置
+- properties属性
 
