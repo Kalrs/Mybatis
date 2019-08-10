@@ -9,3 +9,24 @@
 - [SqlSessionFactory(工厂接口)](Core%20components/SqlSessionFactory.md)
 - [SqlSession(会话)](Core%20components/SqlSession.md)
 - [Sql Mapper(映射器)](Core%20components/Mapper.md)
+## SQL发送方式
+### SQLSession发送SQL
+- 有了映射器就可以通过SQlSessiom发送SQL了。
+```java
+  Role role =(Role)sqlSession.selectOne("com.Lee.Learn.RoleMapper.getRole",1L);
+  /**
+  selectOne方法表示使用查询并且只返回一个对象,而参数则是一个String对象和一个Object对象。
+  String对象由命名空间加SQL id组合而成，完全定位一条SQL，当id唯一时，可以简写。
+  *
+```
+### 用Mapper接口发送SQL
+- SqlSession可以获取Maooer接口，在同股票Mapper接口发送SQL。
+```java
+   RoleMapper roleMapper =sqlSession.getMapper(RoleMapper.class);
+   Role role=roleMapper.getRole(1L);
+```
+### 对比两种方式
+- 使用Mapper接口编程可以消除SqlSession带来的功能性代码，提高可读性，而SqlSession发送SQL，需要一个SQL id去匹配SQl。使用Mapper接口，类似roleMapper.getRole(1L)则是完全面向对象的语言，更能体现业务的逻辑。
+- 使用Mapper.getRole(1L)，IDE会提示错误和校验，而使用sqlSession.selectOne("getRole",1L)语言，只有在运行中才能知道是否会产生误会。
+## 生命周期
+- 
