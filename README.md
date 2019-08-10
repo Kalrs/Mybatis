@@ -33,5 +33,6 @@
 - SqlSessionFactory:可以被认为是数据库的连接池，在使用Mybatis应用时一直存在。以单例的方式存在。
 - SqlSession:存活在一个业务请求中，处理完整个请求后，关闭连接，规划给SQLSessionFactory。
 - Mapper:代表一个业务处理步骤,随着SqlSession的关闭而废弃。
-## [实例](Core%20components/Demo.md)
+## 实例
+- 一个简单的插入删除修改等的[demo](Core%20components/Demo.md)
 
