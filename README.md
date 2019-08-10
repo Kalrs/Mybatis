@@ -36,5 +36,23 @@
 ## 实例
 - 一个简单的插入删除修改等的[demo](Core%20components/Demo.md)
 ## MyBatis配置
-- properties属性
+- 配置文件元素
+```java
+    <configuration/><!--配置-->
+    <properties/> <!--属性-->
+    <settings/><!--设置-->
+    <typeAliases/><!--类型命名-->
+    <typeHandlers/><!--类型处理器-->
+    <plugins/><!--插件-->
+    <environments default=""><!--配置环境-->
+        <environment id=""><!--环境变量-->
+            <transactionManager type=""/><!--事务管理器-->
+            <dataSource type=""/><!--数据源-->
+        </environment>
+    </environments>
+    <databaseIdProvider type=""/><!--s数据库厂商标识-->
+    <mappers/> <!--映射器-->
+```
+- [properties属性](Configuration/properties.md)
+
 
