@@ -54,5 +54,5 @@
     <mappers/> <!--映射器-->
 ```
 - [properties属性](Configuration/properties.md)
-
-
+- [setings设置](Configuration/settings.md)
+- [typeAliases别名](Configuration/typeAliases.md)
