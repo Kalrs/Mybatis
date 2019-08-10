@@ -68,7 +68,7 @@ public class Role {
     private  String roleName;
     private  String note;
     /**getter and setter**/
-    /** constructrue **/
+    /** constructor **/
 }
 ```
 - RoleMapper
