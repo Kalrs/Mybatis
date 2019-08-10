@@ -29,4 +29,9 @@
 - 使用Mapper接口编程可以消除SqlSession带来的功能性代码，提高可读性，而SqlSession发送SQL，需要一个SQL id去匹配SQl。使用Mapper接口，类似roleMapper.getRole(1L)则是完全面向对象的语言，更能体现业务的逻辑。
 - 使用Mapper.getRole(1L)，IDE会提示错误和校验，而使用sqlSession.selectOne("getRole",1L)语言，只有在运行中才能知道是否会产生误会。
 ## 生命周期
-- 
+- SqlSessionFactoryBuilder:只能存在于创建SqlSessionFactory的方法中.
+- SqlSessionFactory:可以被认为是数据库的连接池，在使用Mybatis应用时一直存在。以单例的方式存在。
+- SqlSession:存活在一个业务请求中，处理完整个请求后，关闭连接，规划给SQLSessionFactory。
+- Mapper:代表一个业务处理步骤,随着SqlSession的关闭而废弃。
+## [实例](Core%20components/Demo.md)
+
