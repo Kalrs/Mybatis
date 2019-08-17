@@ -58,5 +58,5 @@
 - [typeAliases别名](Configuration/typeAliases.md)
 - [typeHandler类型转换器](Configuration/typeHandler.md)
 - [environments](Configuration/environments.md)
-- [databaseIdProvider数据库厂商标识](Configuration/databaseIdprovider.md)
+- [databaseIdProvider数据库厂商标识](Configuration/databaseIdProvider.md)
 - [引入映射器的方法](Configuration/引入映射器的方法.md)
